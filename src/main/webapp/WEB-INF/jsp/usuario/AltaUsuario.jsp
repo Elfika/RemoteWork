@@ -1,12 +1,68 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
 <body>
-
+<div class="form-container text-center">
+		<form  class="form-alta" onsubmit="return validarFormulario()">
+			<div class="row">
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Nombre</label>
+			        <input id="nombreUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Apellido</label>
+			        <input id="apellidoUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>DNI</label>
+			        <input id="dniUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Dirección</label>
+			        <input id="direccionUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Número</label>
+			        <input id="numDireUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>País</label>
+			        <input id="paisUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Correo electrónico</label>
+			        <input id="emailUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>Teléfono</label>
+			        <input id="telefonoUs" class="form-control" type="text">
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="input-group">
+			       	<label>ID Skype</label>
+			        <input id="telefono2Us" class="form-control" type="text">
+			    </div>
+			  </div>
+			</div>
+		</form>
+	
+	</div>
 </body>
 </html>
