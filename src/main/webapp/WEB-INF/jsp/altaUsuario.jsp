@@ -81,5 +81,6 @@
            	</div>
         </form:form>     
 	</div>
+	<jsp:include page="Menu.jsp" flush="true" />
     </body>
 </html>
