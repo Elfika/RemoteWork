@@ -7,10 +7,27 @@ public class Usuario {
     private int dni;
     private String direccion;
     private int numero;
-    private String pais;
+    private String country;
     private String email;
     private int telefono;
     private String idSkype;
+    
+  //Constructor sin parametros
+    public Usuario() {
+    }
+    
+  //Constructor con parametros 
+    public Usuario(String nombre, String apellido, int dni, String direccion, int numero, String country, String email, int telefono, String idSkype ) {
+    	this.nombre= nombre;
+    	this.apellido = apellido;
+    	this.dni = dni;
+    	this.direccion = direccion;
+    	this.numero = numero;
+    	this.country = country;
+    	this.email = email;
+    	this.telefono = telefono;
+    	this.idSkype = idSkype;
+    }
     
     public int getId() {
 		return id;
@@ -49,11 +66,11 @@ public class Usuario {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	public String getPais() {
-		return pais;
+	public String getCountry() {
+		return country;
 	}
-	public void setPais(String pais) {
-		this.pais = pais;
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	public String getEmail() {
 		return email;
@@ -72,6 +89,11 @@ public class Usuario {
 	}
 	public void setIdSkype(String idSkype) {
 		this.idSkype = idSkype;
+	}
+	
+	 @Override
+	    public String toString() {
+	        return "Usuario{" + "Nombre=" + nombre + ", Apellido=" + apellido +  ", DNI=" + dni + ", Dirección=" + direccion + ", Número=" + numero + ", País=" + country +", Email=" + email + "Telefono=" + telefono + "ID Skype=" + idSkype + '}';
 	}
 	
 }

@@ -8,6 +8,8 @@ public class ControladorLogin {
 	@RequestMapping (value="/login")
 	public ModelAndView mostrarLogin(){		
 		return new ModelAndView("login/login");
+		
+		
 	}
 	
 	@RequestMapping (value="/recuperaLogin")
@@ -20,4 +22,8 @@ public class ControladorLogin {
 		return new ModelAndView ("login/cambiaContrasena");
 	}
 	
+	@RequestMapping (value="/test")
+	public ModelAndView mostrarTest(){
+		return new ModelAndView ("login/test");
+	}
 }

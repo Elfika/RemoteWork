@@ -20,7 +20,7 @@
 </div>
 
 <div class="copyright">
-<p>Copyright &copy; 2016. Next Bootstrap.</p>
+<p>Copyright &copy; 2016. UNLAM.</p>
 </div>
 </div>
 </div>

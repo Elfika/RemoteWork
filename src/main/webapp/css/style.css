@@ -11,6 +11,28 @@ body {
     padding:0;
 } 
 
+/** *********Estilo para ERROR******** **/
+.error {
+     color: #ff0000;
+}
+.errorblock{
+	 color: #000;
+	 background-color: #ffEEEE;
+	 border: 3px solid #ff0000;
+	 padding:8px;
+	 margin:16px;
+}
+
+
+/*   Generales */
+.barra{
+	background-color: #898484;
+	
+}
+
+nav.navbar ul.nav li{
+	color: #454040;
+}
 .form-container{
 	width: 100%;
 	margin-top: 10%;
@@ -31,7 +53,7 @@ body {
            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
                 box-shadow: 0 1px 2px rgba(0,0,0,.05);
       }
-.form-signin .form-signin-heading,.form-signin .checkbox, .form-not-signin{
+.form-signin .form-signin-heading,.form-signin .checkbox, .form-not-signin. .form-alta{
         margin-bottom: 10px;
       }
       
@@ -41,7 +63,19 @@ body {
     margin-bottom: 15px;
     padding: 7px 9px;
    }
- 
+.form-alta{
+	 margin-left:9%;
+	  width:100%;
+        padding-bottom: 2%;
+        background-color: #fff;
+        /* border: 1px double #7c95a3;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);*/
+} 
 .form-not-signin {
 	height: auto;
     margin-left:39%;
@@ -53,7 +87,9 @@ body {
 	margin-left:39%;
 	
 }
-
+.contenedor-gral{
+	margin: 5%;
+}
 .contenedor-submit{
 	margin:1%;
 }
@@ -61,4 +97,128 @@ body {
 .ocultarForm{
 	display: none;
 
+}
+
+.btn-bajo{
+	
+	margin-top:5%;
+}
+.btn-der{
+	margin-left: 99%; 
+}
+.marco{
+	border: 1px double #7c95a3;
+	width: 90%;
+}
+
+/* ********* Titulos con Separadores ********* */
+
+.section-title {
+	max-width: 800px;
+	margin-bottom: 20px auto; 
+	padding: 15px; */
+	text-align: center; 
+}
+
+.section-title h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #2ca5b9; 
+	}
+	
+.section-title .divider {
+	position: relative;
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	}
+	
+.section-title .divider:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	border: 1px solid #f0f0f0;
+	left: 50%;
+	margin-left: -15px;
+	top: 50%;
+	background: #fff;
+	margin-top: -15px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+	}
+	
+.section-title .divider:after {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	border: 1px solid #2ca5b9;
+	left: 50%;
+	margin-left: -10px;
+	top: 50%;
+	background: #2ca5b9;
+	margin-top: -10px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+	}
+	
+/* ********* Footer ********* */	
+
+footer {
+	background: #454040; 
+}
+
+footer .copyright-section {
+	background: #454040;
+	padding: 30px 0; 
+}
+
+footer .copyright-section .logo {
+	max-width: 300px;
+	margin: 0 auto; 
+}
+
+footer .copyright-section .social-media {
+	margin-top: 30px; 
+}
+
+footer .copyright-section .social-media ul {
+	text-align: center; 
+}
+
+footer .copyright-section .social-media ul li a {
+	display: block;
+	color: #454040;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #2ca5b9; 
+}
+footer .copyright-section .social-media ul li a:hover {
+background: #FA5C4A;
+color: #fff; 
+}
+footer .copyright-section .copyright {
+margin-top: 30px; 
+}
+footer .copyright-section .copyright p {
+text-align: center;
+color: #666; 
+}
+footer .demo-logo{
+margin: 0;
+padding: 0;
+text-align: center;
+font-size: 36px;
+text-transform: uppercase;
+color: #999;
+}
+footer .demo-logo strong{
+color: #2ca5b9;
 }
