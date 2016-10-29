@@ -17,6 +17,8 @@ public class ControladorUsuario {
         model.addAttribute("countries",countries);
         return "altaUsuario";
     }
+    
+   
 
     @RequestMapping(value = "resultadoAltaUsuario", method = RequestMethod.POST)
     public String Form(Usuario usuario, Model model) {

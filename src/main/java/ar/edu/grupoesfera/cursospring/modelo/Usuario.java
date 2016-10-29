@@ -1,15 +1,33 @@
 package ar.edu.grupoesfera.cursospring.modelo;
 
-public class Usuario {
-	private int id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Usuario{
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	@Column
     private String nombre;
+	@Column
     private String apellido;
+	@Column
     private int dni;
+	@Column
     private String direccion;
+	@Column
     private int numero;
+	@Column
     private String country;
+	@Column
     private String email;
+	@Column
     private int telefono;
+	@Column
     private String idSkype;
     
   //Constructor sin parametros
@@ -29,10 +47,10 @@ public class Usuario {
     	this.idSkype = idSkype;
     }
     
-    public int getId() {
+    public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
@@ -91,9 +109,41 @@ public class Usuario {
 		this.idSkype = idSkype;
 	}
 	
+	@Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (id != null ? id.hashCode() : 0);
+        return hash;
+    }
+	 @Override
+	    public boolean equals(Object object) {
+	        if (!(object instanceof Usuario)) {
+	            return false;
+	        }
+	        Usuario other = (Usuario) object;
+	        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+	            return false;
+	        }
+	        return true;
+	    }
+	 
 	 @Override
 	    public String toString() {
-	        return "Usuario{" + "Nombre=" + nombre + ", Apellido=" + apellido +  ", DNI=" + dni + ", Dirección=" + direccion + ", Número=" + numero + ", País=" + country +", Email=" + email + "Telefono=" + telefono + "ID Skype=" + idSkype + '}';
+	        return "Usuario{" + "Id=" + id + "Nombre=" + nombre + ", Apellido=" + apellido +  ", DNI=" + dni + ", Dirección=" + direccion + ", Número=" + numero + ", País=" + country +", Email=" + email + "Telefono=" + telefono + "ID Skype=" + idSkype + '}';
 	}
 	
+	/* @Override
+		public int compareTo(Usuario usuario) {
+			  return this.nombre.compareTo(usuario.getNombre());
+			 }*/
+
+	   /* @Override
+	    public boolean equals(Object o) {
+	      if (o instanceof Usuario) {
+	    	  Usuario p = (Usuario)o;
+	        return this.nombre.equals(p.nombre);
+	      } else {
+	        return false;
+	      }
+	    }	*/
 }

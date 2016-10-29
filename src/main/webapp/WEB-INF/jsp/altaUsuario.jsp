@@ -3,6 +3,8 @@
 <jsp:include page="Header.jsp" flush="true" />
 <jsp:include page="Menu.jsp" flush="true" />
 	<div class="contenedor-gral text-center ">
+	<div class="row ">
+			<div class="col-lg-6 ">
 		<div class="section-title">
 			<h1>Alta de Recursos</h1>
 			<div class="divider"></div>
@@ -13,7 +15,7 @@
             	<div class="col-lg-3">
 			    	<div class="input-group">
 			            <form:label path="nombre">Nombre</form:label>
-			            <form:input path="nombre" class="form-control"/>
+			            <form:input path="nombre" class="form-control" required="true"/>
 			        </div>
 			    </div>
 			    <div class="col-lg-3">
@@ -79,8 +81,12 @@
                 	<input type="submit" class="btn btn-large btn-primary" value="Dar de Alta">
              	</div>
            	</div>
-        </form:form>     
+        </form:form>  
+        </div>
+        <div class="col-lg-6">
+				<jsp:include page="resultadoAltaUsuario.jsp" flush="false" /> 
+			</div>
+		</div>	   
 	</div>
-	<jsp:include page="Menu.jsp" flush="true" />
-    </body>
-</html>
+	<jsp:include page="Footer.jsp" flush="true" />
+ 

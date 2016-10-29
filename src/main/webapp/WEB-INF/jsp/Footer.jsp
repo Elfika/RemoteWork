@@ -27,3 +27,5 @@
 </div>
 </section><!--  End of copyright and social media section -->
 </footer> <!--  End of footer -->
+</body>
+</html>

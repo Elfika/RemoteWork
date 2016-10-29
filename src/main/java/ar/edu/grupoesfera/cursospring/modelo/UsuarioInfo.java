@@ -1,25 +1,27 @@
 package ar.edu.grupoesfera.cursospring.modelo;
 
 public class UsuarioInfo {
-	 private String userName;
+	 private String usuario;
 	 private String password;
+	 private String check;
 	 
 	//Constructor sin parametros
 	 public UsuarioInfo(){		 
 	 }
 	 
 	 //Constructor con parametros
-	 public UsuarioInfo(String userName, String password){	
-		 this.userName = userName;
+	 public UsuarioInfo(String usuario, String password, String check){	
+		 this.usuario = usuario;
 		 this.password = password;
+		 this.check = check;
 	 }
 	 
-	 public String getUserName() {
-	     return userName;
+	 public String getUsuario() {
+	     return usuario;
 	 }
 	 
-	 public void setUserName(String userName) {
-	     this.userName = userName;
+	 public void setUsuario(String usuario) {
+	     this.usuario = usuario;
 	 }
 	 
 	 public String getPassword() {
@@ -29,5 +31,13 @@ public class UsuarioInfo {
 	 public void setPassword(String password) {
 	     this.password = password;
 	 }
+
+	public String getCheck() {
+		return check;
+	}
+
+	public void setCheck(String check) {
+		this.check = check;
+	}
 	 
 }
