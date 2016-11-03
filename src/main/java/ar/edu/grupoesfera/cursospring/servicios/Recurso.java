@@ -1,32 +1,23 @@
 package ar.edu.grupoesfera.cursospring.servicios;
-import ar.edu.grupoesfera.cursospring.modelo.Usuario;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.TreeSet;
+import ar.edu.grupoesfera.cursospring.dao.Dao;
+import java.util.List;
+import javax.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 
-
+@Service
 public class Recurso {
 
-	 private Set<Usuario> recursos = new TreeSet<Usuario>();
+	@Resource
+	private Dao dao;
 	
-	
-	public void agregarRecurso(Usuario usuario) {
-		this.recursos.add(usuario);
+	public Recurso newRecurso(){
+		return new Recurso();
 	}
 	
-	public int obtenerCantidadRecursos() {
-		return recursos.size();
+	public List<Recurso> getRecursos() {
+		final List<Recurso> list = dao.find(Recurso.class);
+		return list;
 	}
 	
-	public void listarRecursos (TreeSet<Usuario> empleado){
-		Iterator <Usuario> usuario = empleado.iterator();
-		while (usuario.hasNext()){
-			try{
-				System.out.println((usuario.next()).toString());
-			}catch (NullPointerException e){
-				System.err.println ("No se encontraron recursos registrados");
-			}
-		}
-	}
 }

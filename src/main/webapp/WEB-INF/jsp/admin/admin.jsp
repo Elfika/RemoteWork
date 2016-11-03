@@ -1,10 +1,10 @@
 <jsp:include page="../Header.jsp" flush="true" />
-<jsp:include page="../Menu.jsp" flush="true" />
+<jsp:include page="../MenuAdmin.jsp" flush="true" />
 <body>
 	<div class="contenedor-gral text-center ">
 		<div class="row ">
 			<div class="col-lg-6 ">
-				<jsp:include page="../altaUsuario.jsp" flush="false" /> 
+				<jsp:include page="altaUsuario.jsp" flush="false" /> 
 			</div>
 			<div class="col-lg-6">
 				

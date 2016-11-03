@@ -1,11 +1,8 @@
 package ar.edu.grupoesfera.cursospring.controladores;
+
 import org.springframework.stereotype.Controller;
-
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.web.servlet.ModelAndView;
-
-
 
 
 @Controller
@@ -15,6 +12,7 @@ public class ControladorLogin {
 		return new ModelAndView("login/login");
 	}
 	
+
 	
 	@RequestMapping (value="/recuperaLogin")
 	public ModelAndView mostrarRecuperaLogin(){
